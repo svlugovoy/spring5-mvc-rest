@@ -1,7 +1,7 @@
 package com.svlugovoy.spring5mvcrest.service;
 
 import com.svlugovoy.spring5mvcrest.api.v1.mapper.CategoryMapper;
-import com.svlugovoy.spring5mvcrest.api.v1model.CategoryDTO;
+import com.svlugovoy.spring5mvcrest.api.v1.model.CategoryDTO;
 import com.svlugovoy.spring5mvcrest.domain.Category;
 import com.svlugovoy.spring5mvcrest.repository.CategoryRepository;
 import org.junit.Before;

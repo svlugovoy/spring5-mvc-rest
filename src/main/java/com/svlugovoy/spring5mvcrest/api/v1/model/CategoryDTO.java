@@ -1,4 +1,4 @@
-package com.svlugovoy.spring5mvcrest.api.v1model;
+package com.svlugovoy.spring5mvcrest.api.v1.model;
 
 import lombok.Data;
 

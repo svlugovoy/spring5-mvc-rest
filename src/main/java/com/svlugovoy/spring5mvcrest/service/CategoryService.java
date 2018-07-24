@@ -1,6 +1,6 @@
 package com.svlugovoy.spring5mvcrest.service;
 
-import com.svlugovoy.spring5mvcrest.api.v1model.CategoryDTO;
+import com.svlugovoy.spring5mvcrest.api.v1.model.CategoryDTO;
 
 import java.util.List;
 
