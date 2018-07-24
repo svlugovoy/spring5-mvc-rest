@@ -124,6 +124,37 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "updateCustomerById",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstName\": \"Michale_1\",\n    \"lastName\": \"Weston_1\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/customers/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"customers",
+						"1"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
