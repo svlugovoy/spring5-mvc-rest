@@ -4,6 +4,7 @@ import com.svlugovoy.spring5mvcrest.api.v1.mapper.CustomerMapper;
 import com.svlugovoy.spring5mvcrest.api.v1.model.CustomerDTO;
 import com.svlugovoy.spring5mvcrest.controller.v1.CustomerController;
 import com.svlugovoy.spring5mvcrest.domain.Customer;
+import com.svlugovoy.spring5mvcrest.exceptions.ResourceNotFoundException;
 import com.svlugovoy.spring5mvcrest.repository.CustomerRepository;
 import org.springframework.stereotype.Service;
 
@@ -45,7 +46,7 @@ public class CustomerServiceImpl implements CustomerService {
                     customerDTO.setCustomerUrl(getCustomerUrl(id));
                     return customerDTO;
                 })
-                .orElseThrow(RuntimeException::new); //todo implement better exception handling
+                .orElseThrow(ResourceNotFoundException::new);
     }
 
     @Override
@@ -87,7 +88,7 @@ public class CustomerServiceImpl implements CustomerService {
             returnDto.setCustomerUrl(getCustomerUrl(id));
             return returnDto;
 
-        }).orElseThrow(RuntimeException::new); //todo implement better exception handling;
+        }).orElseThrow(ResourceNotFoundException::new);
     }
 
     @Override
